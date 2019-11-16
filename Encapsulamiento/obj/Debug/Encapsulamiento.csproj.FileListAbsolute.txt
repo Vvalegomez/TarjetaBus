@@ -1,0 +1,10 @@
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Encapsulamiento.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Encapsulamiento.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Conexion.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Entidades.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Conexion.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\bin\Debug\Entidades.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\obj\Debug\Encapsulamiento.csprojAssemblyReference.cache
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\obj\Debug\Encapsulamiento.csproj.CopyComplete
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\obj\Debug\Encapsulamiento.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Encapsulamiento\obj\Debug\Encapsulamiento.pdb

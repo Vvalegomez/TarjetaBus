@@ -1,0 +1,8 @@
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\bin\Debug\Conexion.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\bin\Debug\Conexion.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\bin\Debug\Entidades.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\bin\Debug\Entidades.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\obj\Debug\Conexion.csprojAssemblyReference.cache
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\obj\Debug\Conexion.csproj.CopyComplete
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\obj\Debug\Conexion.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Conexion\obj\Debug\Conexion.pdb

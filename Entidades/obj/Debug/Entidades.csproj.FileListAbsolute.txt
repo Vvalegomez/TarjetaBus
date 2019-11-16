@@ -1,0 +1,5 @@
+C:\Users\Valerio\source\repos\TarjetaBus\Entidades\bin\Debug\Entidades.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Entidades\bin\Debug\Entidades.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Entidades\obj\Debug\Entidades.csprojAssemblyReference.cache
+C:\Users\Valerio\source\repos\TarjetaBus\Entidades\obj\Debug\Entidades.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Entidades\obj\Debug\Entidades.pdb

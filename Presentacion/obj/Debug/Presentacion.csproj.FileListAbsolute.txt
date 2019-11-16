@@ -1,0 +1,15 @@
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.csprojAssemblyReference.cache
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.FormTarjeta.resources
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.csproj.GenerateResource.cache
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Presentacion.exe
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Presentacion.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Encapsulamiento.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Entidades.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Conexion.dll
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Encapsulamiento.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Entidades.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\bin\Debug\Conexion.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.csproj.CopyComplete
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.exe
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.pdb
+C:\Users\Valerio\source\repos\TarjetaBus\Presentacion\obj\Debug\Presentacion.FormPersona.resources
