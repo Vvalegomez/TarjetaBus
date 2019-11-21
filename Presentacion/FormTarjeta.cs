@@ -24,14 +24,16 @@ namespace Presentacion
             LlenarDGV();
         }
 
-        public FormTarjeta(int pDni, string pNombre/*, int pEdad*/)
+        public FormTarjeta(int pDni, string pNombre, DateTime pEdad)
         {
+
             InitializeComponent();
             ArmarDGV();
             LlenarDGV();
             txtDtarjeta.Text = pDni.ToString();
-
-            lblNombre.Text = "Nombre: " + pNombre /*+ "Edad: " + pEdad.ToString()*/;
+            lblNombre.Text = "Nombre: " + pNombre;
+            lblEdad.Text = "Fecha de Nacimiento: " + pEdad.ToString();
+            
         }
 
         private void ControlNumero(KeyPressEventArgs e)

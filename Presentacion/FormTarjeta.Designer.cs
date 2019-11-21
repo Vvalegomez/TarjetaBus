@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             this.btGrabar = new System.Windows.Forms.Button();
-            this.btModificar = new System.Windows.Forms.Button();
             this.txtNtarjeta = new System.Windows.Forms.TextBox();
             this.txtDtarjeta = new System.Windows.Forms.TextBox();
             this.txtSaldo = new System.Windows.Forms.TextBox();
@@ -44,6 +43,7 @@
             this.txtBoxMonto = new System.Windows.Forms.TextBox();
             this.lblMonto = new System.Windows.Forms.Label();
             this.lblNombre = new System.Windows.Forms.Label();
+            this.lblEdad = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvTarjeta)).BeginInit();
             this.SuspendLayout();
             // 
@@ -56,16 +56,6 @@
             this.btGrabar.Text = "Grabar";
             this.btGrabar.UseVisualStyleBackColor = true;
             this.btGrabar.Click += new System.EventHandler(this.btGrabar_Click);
-            // 
-            // btModificar
-            // 
-            this.btModificar.Location = new System.Drawing.Point(133, 95);
-            this.btModificar.Name = "btModificar";
-            this.btModificar.Size = new System.Drawing.Size(75, 23);
-            this.btModificar.TabIndex = 1;
-            this.btModificar.Text = "Modificar";
-            this.btModificar.UseVisualStyleBackColor = true;
-            this.btModificar.Click += new System.EventHandler(this.btModificar_Click);
             // 
             // txtNtarjeta
             // 
@@ -196,11 +186,21 @@
             this.lblNombre.Text = "-";
             this.lblNombre.Click += new System.EventHandler(this.lblNombre_Click);
             // 
+            // lblEdad
+            // 
+            this.lblEdad.AutoSize = true;
+            this.lblEdad.Location = new System.Drawing.Point(133, 148);
+            this.lblEdad.Name = "lblEdad";
+            this.lblEdad.Size = new System.Drawing.Size(10, 13);
+            this.lblEdad.TabIndex = 16;
+            this.lblEdad.Text = "-";
+            // 
             // FormTarjeta
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(410, 471);
+            this.Controls.Add(this.lblEdad);
             this.Controls.Add(this.lblNombre);
             this.Controls.Add(this.lblMonto);
             this.Controls.Add(this.txtBoxMonto);
@@ -215,7 +215,6 @@
             this.Controls.Add(this.txtSaldo);
             this.Controls.Add(this.txtDtarjeta);
             this.Controls.Add(this.txtNtarjeta);
-            this.Controls.Add(this.btModificar);
             this.Controls.Add(this.btGrabar);
             this.Name = "FormTarjeta";
             this.Text = "FormTarjeta";
@@ -228,7 +227,6 @@
         #endregion
 
         private System.Windows.Forms.Button btGrabar;
-        private System.Windows.Forms.Button btModificar;
         private System.Windows.Forms.TextBox txtNtarjeta;
         private System.Windows.Forms.TextBox txtSaldo;
         private System.Windows.Forms.DataGridView dgvTarjeta;
@@ -243,5 +241,6 @@
         private System.Windows.Forms.Label lblMonto;
         public System.Windows.Forms.TextBox txtDtarjeta;
         private System.Windows.Forms.Label lblNombre;
+        private System.Windows.Forms.Label lblEdad;
     }
 }

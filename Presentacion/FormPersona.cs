@@ -15,8 +15,10 @@ namespace Presentacion
     public partial class FormPersona : Form
     {
         public Persona objPersona = new Persona();
-        
+
         public EncPersonas objEncPersona = new EncPersonas();
+
+
         public FormPersona()
         {
             InitializeComponent();
@@ -24,54 +26,67 @@ namespace Presentacion
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
-            
+
         }
 
         private void btSalir_Click(object sender, EventArgs e)
         {
-            
+
+
             try
             {
-              
-                FormTarjeta formTarjeta = new FormTarjeta(int.Parse(txtBoxNdni.Text), txtBoxNombre.Text/*, int.Parse(dtFechaNac.Text)*/);
+
+              FormTarjeta formTarjeta = new FormTarjeta(int.Parse(txtBoxNdni.Text), txtBoxNombre.Text, DateTime.Parse(dtFechaNac.Text));
+              this.Hide();
+              formTarjeta.ShowDialog();
+              this.Close();
+
+            }
+            catch
+            {
+
+                MessageBox.Show("AVISO: Esta por salir sin guardar niguna persona.");
+                
+                FormTarjeta formTarjeta = new FormTarjeta();
                 this.Hide();
                 formTarjeta.ShowDialog();
                 this.Close();
+            }
 
-            }
-            catch (Exception)
-            {
-               
-               MessageBox.Show("No se puede realizar la accion, Debe crear una persona");
-                
-            }
-            
         }
 
         private void btGuardar_Click(object sender, EventArgs e)
         {
-            int nGrabados = -1;
-            TxtBox_a_Obj();
-
-            nGrabados = objEncPersona.abmPersonas("Alta", objPersona);
-
-            if (nGrabados == -1)
-            { lblDato.Text = "  No pudo grabar la Persona en el sistema"; }
-            else
+            try
             {
-                lblDato.Text = "  Se grabó con éxito Persona.";
-                
+                int nGrabados = -1;
+                TxtBox_a_Obj();
+
+                nGrabados = objEncPersona.abmPersonas("Alta", objPersona);
+
+                if (nGrabados == -1)
+                { lblDato.Text = "  No pudo grabar la Persona en el sistema"; }
+                else
+                {
+                    lblDato.Text = "  Se grabó con éxito Persona.";
+
+                }
+            }
+            catch
+            {
+                MessageBox.Show("Error, debe asignar un valor valido");
             }
         }
 
         private void TxtBox_a_Obj()
         {
-            objPersona.pDni = int.Parse(txtBoxNdni.Text);
-            objPersona.pCuilCuit = int.Parse(txtBoxCuil.Text);
-            objPersona.pNombre = Convert.ToString(txtBoxNombre.Text);
-            objPersona.pSexo = Convert.ToChar(cbSexo.SelectedItem);
-            objPersona.pTipoDni = Convert.ToString(cbTdni.SelectedItem);
-            objPersona.pFechaNacimiento = Convert.ToDateTime(dtFechaNac.Value);
+                
+                objPersona.pDni = int.Parse(txtBoxNdni.Text);
+                objPersona.pCuilCuit = int.Parse(txtBoxCuil.Text);
+                objPersona.pNombre = Convert.ToString(txtBoxNombre.Text);
+                objPersona.pSexo = Convert.ToChar(cbSexo.SelectedItem);
+                objPersona.pTipoDni = Convert.ToString(cbTdni.SelectedItem);
+                objPersona.pFechaNacimiento = Convert.ToDateTime(dtFechaNac.Value);
 
         }
 
@@ -129,9 +144,14 @@ namespace Presentacion
 
         private void dtFechaNac_ValueChanged(object sender, EventArgs e)
         {
-           /* DateTime pEdad = DateTime.Today;
-            int edad = pEdad.Year - dtFechaNac.Value.Year;
-            if (pEdad < dtFechaNac.Value.AddYears(edad)) edad--;*/
+            var pEdad = DateTime.Today;
+            var edad = pEdad.Year - dtFechaNac.Value.Year;
+            if (dtFechaNac.Value.Date > pEdad.AddYears(-edad)) edad--;
+            lblDato.Text = "Edad: " + edad.ToString();
+  
         }
+     
     }
 }
+
+

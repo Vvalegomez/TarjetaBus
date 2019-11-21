@@ -20,9 +20,9 @@ namespace Conexion
             if (accion == "Agregar")
                 orden = "insert into Tarjeta values (" + objTarjeta.tNroTarjeta +
                     "," + objTarjeta.tNroDni + "," + objTarjeta.tSaldo + ") ;";
-            if (accion == "Modificar")
+           /* if (accion == "Modificar")
                 orden = "update Tarjeta set tSaldo= " + objTarjeta.tSaldo + "where tNroTarjeta=" +
-                    objTarjeta.tNroTarjeta + ";";
+                    objTarjeta.tNroTarjeta + ";";*/
 
             SqlCommand cmd = new SqlCommand(orden, conexion);
 
